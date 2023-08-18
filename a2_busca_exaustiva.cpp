@@ -6,19 +6,19 @@
 #include <stdlib.h>
 #include <time.h>
 
-//DeclaraÁ„o de Vari·veis
+//Declara√ß√£o de Vari√°veis
 int vetor[10000];
 int i = 0;
 int busca = 0;
 int achei = -1;
 time_t t;
 
-//FunÁ„o Principal
+//Fun√ß√£o Principal
 int main() {
-	//InicializaÁ„o da aleatoridade
+	//Inicializa√ß√£o da aleatoridade
 	srand((unsigned) time(&t));
 	
-	//InicializaÁ„o da memÛria
+	//Inicializa√ß√£o da mem√≥ria
 	for (i = 0; i < 10000; i++) {
 		vetor[i] = rand() % 10000;
 	}
@@ -36,6 +36,6 @@ int main() {
 	if (achei == -1) {
 		printf("vish");
 	} else {
-		printf("achei, na posiÁ„o %d", achei);
+		printf("achei, na posi√ß√£o %d", achei);
 	}
 }
