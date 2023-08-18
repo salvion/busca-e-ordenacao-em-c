@@ -1,30 +1,30 @@
 //////////////////////////////
-/// OrdenaÁ„o Bubble Sort ///
+/// Ordena√ß√£o Bubble Sort ///
 /////////////////////////////
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-//DeclaraÁ„o de Vari·veis
+//Declara√ß√£o de Vari√°veis
 
 int vetor[10000];
 int i = 0;
 int troquei = 0;
 time_t t;
 
-//FunÁ„o Principal
+//Fun√ß√£o Principal
 
 int main() {
-	//InicializaÁ„o da aleatoridade
+	//Inicializa√ß√£o da aleatoridade
 	srand((unsigned) time(&t));
 	
-	//InicializaÁ„o da memÛria
+	//Inicializa√ß√£o da mem√≥ria
 	for (i = 0; i < 10000; i++) {
 		vetor[i] = rand() % 10000;
 	}
 	
-	//OrdenaÁ„o
+	//Ordena√ß√£o
 	troquei = 1;
 	while (troquei) {
 		troquei = 0;
@@ -39,7 +39,7 @@ int main() {
 		}
 	}
 	
-	//Impress„o do vetor
+	//Impress√£o do vetor
 		for (i = 0; i < 10000; i++) {
 		printf("%d\n", vetor[i]);
 	}
