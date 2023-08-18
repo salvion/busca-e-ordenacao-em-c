@@ -1,12 +1,12 @@
 ///////////////////////
-/// Busca Bin·ria ///// TEM QUE ESTAR PREVIAMENTE ORDENADA
+/// Busca Bin√°ria ///// TEM QUE ESTAR PREVIAMENTE ORDENADA
 ///////////////////////
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-//DeclaraÁ„o de Vari·veis
+//Declara√ß√£o de Vari√°veis
 int vetor[100];
 int i = 0;
 int busca = 0;
@@ -14,9 +14,9 @@ int inicio = 0;
 int fim = 99;
 int meio = 0;
 
-//FunÁ„o Principal
+//Fun√ß√£o Principal
 int main() {	
-	//InicializaÁ„o da memÛria
+	//Inicializa√ß√£o da mem√≥ria
 	for (i = 0; i < 100; i++) {
 		vetor[i] = i;
 	}
@@ -31,7 +31,7 @@ int main() {
 		meio = (inicio + fim) / 2;
 		
 		if (vetor[meio] == busca) {
-			printf("achei, posuiÁ„o %d", meio);
+			printf("achei, posui√ß√£o %d", meio);
 			return 0;
 		} else if (vetor[meio] > busca) {
 			fim = (meio - 1);
