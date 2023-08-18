@@ -51,7 +51,7 @@ void deletar(int num){
 	struct no *anterior;
 	lixo = cabeca;
 	
-	//Caso o elemento esteja na primeira posição
+	//Caso o elemento esteja na primeira posiÃ§Ã£o
 	if (cabeca -> numero == num){
 		cabeca = cabeca -> proximo;
 		free(lixo);
@@ -70,7 +70,7 @@ void deletar(int num){
 }
 	
 
-//Função principal
+//FunÃ§Ã£o principal
 int main(){
 	for (int i = 0; i <= 100; i++){
 		inserir(i);
