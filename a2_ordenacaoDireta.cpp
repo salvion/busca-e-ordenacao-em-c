@@ -1,32 +1,32 @@
 ////////////////////////
-/// OrdenaÁ„o Direta ///
+/// Ordena√ß√£o Direta ///
 ////////////////////////
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-//DeclaraÁ„o de Vari·veis
+//Declara√ß√£o de Vari√°veis
 
 int vetor[10000];
 int i = 0;
 int j = 0;
 time_t t;
 
-//FunÁ„o Principal
+//Fun√ß√£o Principal
 
 int main() {
-	//InicializaÁ„o da aleatoridade
+	//Inicializa√ß√£o da aleatoridade
 	srand((unsigned) time(&t));
 	
-	//InicializaÁ„o da memÛria
+	//Inicializa√ß√£o da mem√≥ria
 	for (i = 0; i < 10000; i++) {
 		vetor[i] = rand() % 10000;
 	}
 	
-	//OrdenaÁ„o
-	for (i = 0; i < 9999; i++) { //do primeiro ao pen˙ltimo
-		for (j = (i+1); j <10000; j++) { //do prÛximo ao ˙ltimo
+	//Ordena√ß√£o
+	for (i = 0; i < 9999; i++) { //do primeiro ao pen√∫ltimo
+		for (j = (i+1); j <10000; j++) { //do pr√≥ximo ao √∫ltimo
 			if (vetor[i] > vetor[j]) {
 				int temp = vetor[i];
 				vetor[i] = vetor[j];
@@ -35,7 +35,7 @@ int main() {
 		}
 	}
 	
-	//Impress„o do vetor
+	//Impress√£o do vetor
 		for (i = 0; i < 10000; i++) {
 		printf("%d\n", vetor[i]);
 	}
