@@ -12,7 +12,7 @@ struct no {
 	struct no *proximo;
 };
 
-//Declaração de variaveis
+//DeclaraÃ§Ã£o de variaveis
 
 struct no *cabeca = NULL;
 
